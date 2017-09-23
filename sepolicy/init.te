@@ -1,0 +1,3 @@
+allow init sysfs:dir write;
+#allow init system_file:file execute_no_trans;
+
