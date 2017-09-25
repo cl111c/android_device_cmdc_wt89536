@@ -201,8 +201,6 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
     com.android.nfc_extras \
     NfcNci \
     nfc_nci.pn54x.default \
@@ -239,16 +237,40 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.power.rc \
+    init.carrier.rc \
+    init.class_main.sh \
+    init.mdm.sh \
+    init.msm.usb.configfs.rc \
+    init.qcom.class_core.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.factory.rc \
     init.qcom.rc \
+    init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qcom.syspart_fixup.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
     ueventd.qcom.rc
-
+    
+# etc file
 PRODUCT_PACKAGES += \
-    init.qcom.bt.sh
+    hcidump.sh \
+    hsic.control.bt.sh \
+    init.ath3k.bt.sh \
+    init.crda.sh \
+    init.qcom.audio.sh \
+    init.qcom.bt.sh \
+    init.qcom.coex.sh \
+    init.qcom.debug.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.fm.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.uicc.sh \
+    init.qcom.wifi.sh \
+    init.qti.ims.sh \
+    qca6234-service.sh
 
 # RIL
 PRODUCT_PACKAGES += \
