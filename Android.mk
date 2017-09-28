@@ -39,6 +39,11 @@ $(shell mkdir -p $(TARGET_OUT)/lib/modules; \
     ln -sf /system/lib/modules/pronto/pronto_wlan.ko \
         $(TARGET_OUT)/lib/modules/wlan.ko)
 
+# nfc pn547
+#$(shell mkdir -p $(TARGET_OUT)/vendor/firmware; \
+#    ln -sf /vendor/firmware/libpn548ad_fw.so \
+#        $(TARGET_OUT)/vendor/firmware/libpn547_fw.so)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so

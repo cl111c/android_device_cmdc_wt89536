@@ -1520,6 +1520,8 @@ vendor/lib/libllvd_sw_tnr.so
 
 lib/libtfa9895.so
 lib64/libtfa9895.so
+media/tfa98xx.cnt
+
 vendor/lib/libmmcamera_s5k4h8_eeprom.so
 
 # Modules use prebuilt kernel
@@ -1538,9 +1540,10 @@ lib/modules/ufs_test.ko
 lib/modules/wil6210.ko
 lib/modules/pronto/pronto_wlan.ko
 lib64/libwifi-hal-qcom.so
+
+# mmi
 #vendor/lib/mmi_wifi.so
 #vendor/lib64/mmi_wifi.so
-media/tfa98xx.cnt
 
 # firmware
 etc/firmware/hbtp/hbtpcfg.dat
