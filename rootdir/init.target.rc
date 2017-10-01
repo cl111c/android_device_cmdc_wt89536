@@ -298,6 +298,11 @@ service mdtpd /system/vendor/bin/mdtpd
 on boot
     write /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/fw_name PR1702898-s3528t_00260005_00380008.img
     write /sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/update_fw 1
+# orange
+    mkdir -p /data/fpc 0660 system system
+#audio bring up.zhangjianming2.wt,Allow access to read and write 
+    chmod 0777 /sys/bus/platform/drivers/msm8952-asoc-wcd/SmartPa_Ctl
+    chmod 0777 /dev/i2c-8
 
 on property:ro.build.type=user
     write  /proc/sys/kernel/printk  "6 6 1 7"

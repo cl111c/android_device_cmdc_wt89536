@@ -84,8 +84,8 @@ on mmi
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
     
 		#Hardwareinfo wuguang.wt ++
-    chown system system /dev/hardwareinfo
-    chmod 0664 /dev/hardwareinfo
+#    chown system system /dev/hardwareinfo
+#    chmod 0664 /dev/hardwareinfo
 
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
