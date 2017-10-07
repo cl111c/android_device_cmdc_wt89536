@@ -149,8 +149,8 @@ PRODUCT_PACKAGES += \
     com.cyanogenmod.keyhandler
 
 # Gello
-PRODUCT_PACKAGES += \
-    Gello
+#PRODUCT_PACKAGES += \
+#    Gello
 
 # GPS
 PRODUCT_PACKAGES += \
