@@ -1124,6 +1124,8 @@ lib64/libfpservice.so
 
 # FM
 bin/fm_qsoc_patches
+lib/libqcomfm_jni.so
+lib64/libqcomfm_jni.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.msm8953.so
@@ -1451,12 +1453,6 @@ vendor/lib64/libvoice-svc.so
 
 # NFC firmware
 vendor/firmware/libpn548ad_fw.so
-#lib/hw/nfc_nci.pn54x.default.so
-#lib64/hw/nfc_nci.pn54x.default.so
-#lib/libnfc_nci_jni.so
-#lib64/libnfc_nci_jni.so
-#lib/libnfc-nci.so
-#lib64/libnfc-nci.so
 
 # Sensors
 bin/sensors.qcom
@@ -1540,10 +1536,6 @@ lib/modules/ufs_test.ko
 lib/modules/wil6210.ko
 lib/modules/pronto/pronto_wlan.ko
 lib64/libwifi-hal-qcom.so
-
-# mmi
-#vendor/lib/mmi_wifi.so
-#vendor/lib64/mmi_wifi.so
 
 # firmware
 etc/firmware/hbtp/hbtpcfg.dat

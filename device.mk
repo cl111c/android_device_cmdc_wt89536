@@ -71,7 +71,12 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
-
+    
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+    
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
