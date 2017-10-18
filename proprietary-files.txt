@@ -1454,6 +1454,11 @@ vendor/lib64/libvoice-svc.so
 # NFC firmware
 vendor/firmware/libpn548ad_fw.so
 
+# NFC-SIM
+-framework/org.simalliance.openmobileapi.jar
+etc/permissions/org.simalliance.openmobileapi.xml
+-vendor/app/SmartcardService/SmartcardService.apk
+
 # Sensors
 bin/sensors.qcom
 vendor/lib/hw/activity_recognition.msm8953.so
