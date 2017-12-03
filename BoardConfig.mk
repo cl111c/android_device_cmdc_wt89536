@@ -42,19 +42,20 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8953
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 zcache.enabled=1
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_APPEND_DTB := true
 BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_SOURCE := kernel/cmcc/msm8953
-#TARGET_KERNEL_CONFIG := lineageos_wt89536_defconfig
+TARGET_KERNEL_SOURCE := kernel/cmcc/msm8953
+TARGET_KERNEL_CONFIG := lineageos_wt89536_defconfig
 #TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+
+#TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_HEADER_ARCH := arm64
+#TARGET_KERNEL_APPEND_DTB := true
+#BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -93,7 +94,7 @@ BOARD_HAVE_QCOM_FM := true
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
-#TARGET_TS_MAKEUP := true
+TARGET_TS_MAKEUP := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -196,16 +197,16 @@ BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Wi-Fi
 BOARD_HAS_QCOM_WLAN := true
-#BOARD_HAS_QCOM_WLAN_SDK := true
+BOARD_HAS_QCOM_WLAN_SDK := true
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_qcwcn
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_MODULE_NAME := "wlan"
-#WIFI_DRIVER_FW_PATH_AP := "ap"
-#WIFI_DRIVER_FW_PATH_STA := "sta"
+#WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
+#WIFI_DRIVER_MODULE_NAME := "wlan"
+WIFI_DRIVER_FW_PATH_AP := "ap"
+WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
