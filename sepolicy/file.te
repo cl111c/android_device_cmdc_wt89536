@@ -1,4 +1,0 @@
-# add
-type gx_fpd_data_file, file_type, data_file_type;
-type gx_fpd_device, dev_type;
-type gx_fpd_exec,  exec_type, file_type;

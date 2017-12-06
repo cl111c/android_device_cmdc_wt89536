@@ -1,6 +1,0 @@
-#allow system_server block_device:blk_file { read write };
-allow system_server proc:file write;
-allow system_server radio_prop:property_service set;
-
-# add 
-# allow system_server gx_fpd_device:chr_file rw_file_perms;
